@@ -15,8 +15,8 @@
         function calcular(event){
             event.preventDefault();
 
-            peso = parseFloat(document.getElementById("peso").value);
-            altura = parseFloat(document.getElementById("altura").value);
+            peso = parseFloat(document.getElementById("peso").value.replace(",","."));
+            altura = parseFloat(document.getElementById("altura").value.replace(",","."));
 
             imc = peso / (altura*altura);
             /*=-----------------------*/
